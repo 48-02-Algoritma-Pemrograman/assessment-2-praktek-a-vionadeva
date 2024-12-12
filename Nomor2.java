@@ -4,10 +4,8 @@ public class Nomor2 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
+        string transaksi = input.nextLine()
         /* Pekerjaan anda mulai dari sini */
-public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        int N = input.nextInt();
         String transaksi = input.nextLine()
 
        ArrayList<String> daftarBuku = new ArrayList<>();
@@ -23,18 +21,18 @@ public static void main(String[] args){
         System.out.print("Input lagi [Y/N]? ");
         pilihan = scanner.nextLine();
 
-        if (transaksi < 20000) {
-            System.out.println("tidak mendapat voucher");
-            int nilaiTransaksi = input.nextInt();  
-            
-            else if (transaksi >= 20000 && >=50000) 
-            System.out.println("voucher: 50000"); 
-            int nilaiTransaksi = input.nextInt();  
-
-            else {
-                System.out.println();
-
-            }
+       if (total < 200000) {
+            return 0;
+        } else if (total <= 500000) {
+            return 50000;
+        } else if (total <= 750000) {
+            return 100000;
+        } else if (total <= 1000000) {
+            return 150000;
+        } else {
+            return 200000;
+        }
+    }
 }
         
 
